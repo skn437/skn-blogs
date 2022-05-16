@@ -1,0 +1,477 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#root{
+
+    margin: 10px;
+
+}
+
+#App{
+
+    margin: 20px;
+
+}
+
+/* Navbar.js Starts Here */ 
+
+#App #navbar{
+
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#App #navbar #container{
+
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    font-family: georgia;
+
+}
+
+#App #navbar #container h1{
+
+    margin: 5px;
+    padding: 5px;
+    color: rgb(239, 44, 44);
+
+}
+
+#App #navbar #container #links{
+
+    display: flex; 
+
+}
+
+#App #navbar #container #links .nav-link{
+
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+
+}
+
+#App #navbar #container #links .nav-link:hover{
+
+    color: purple;
+
+}
+
+/* Navbar.js Ends Here */ 
+
+#App #content{
+
+    margin: 20px;
+
+}
+
+/* Home.js Starts Here */
+
+#App #content #home{
+
+    margin: 10px;
+
+}
+
+#App #content #home #loading{
+
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(239, 44, 44);
+
+}
+
+#App #content #home #blog-list{
+
+    margin: 10px;
+
+}
+
+#App #content #home #blog-list h2{
+
+    margin: 5px;
+
+}
+
+#App #content #home .blog-preview{
+
+    margin: 30px ;
+    width: 600px;
+    border-left: 3px solid #eee;
+
+}
+
+#App #content #home .blog-preview:hover{
+
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    border-left: 3px solid purple;
+
+}
+
+#App #content #home .blog-preview .blog-detailed{
+
+    text-decoration: none;
+
+}
+
+#App #content #home .blog-preview h2{
+
+    margin: 5px;
+    color:rgb(239, 44, 44);
+
+}
+
+#App #content #home .blog-preview .blog-flex{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 5px; 
+
+}
+
+#App #content #home .blog-preview .blog-flex p{
+
+    margin: 5px;
+
+}
+
+#App #content #home .blog-preview .blog-flex .delete{
+
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+
+}
+
+#App #content #home .blog-preview .blog-flex .delete:hover{
+
+    background: purple;
+    color: white;
+
+}
+
+/* Home.js Ends Here */
+
+/* BlogDetails.js Starts Here */
+
+#App #content #blog-details{
+
+    margin: 10px;
+
+}
+
+#App #content #blog-details article{
+
+    margin: 10px;
+
+}
+
+#App #content #blog-details article h2{
+
+    margin: 10px;
+    padding: 5px;
+
+}
+
+#App #content #blog-details article p{
+
+    margin: 10px;
+    padding: 5px;
+
+}
+
+#App #content #blog-details article #blog-body{
+
+    margin: 20px;
+    padding: 10px;
+    color: rgb(239, 44, 44);
+    font-family: georgia;
+    font-weight: bold;
+
+}
+
+/* BlogDetails.js Ends Here */
+
+/* Create.js Starts Here */
+
+#App #content #create-blog{
+
+    margin: 10px auto;
+    border: 1px solid grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 700px;
+
+}
+
+#App #content #create-blog h2{
+
+    text-align: center;
+    color: red;
+    background: #eee;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 15px;
+
+}
+
+#App #content #create-blog #wrapper-form{
+
+    margin: 5px;
+    position: relative;
+
+}
+
+#App #content #create-blog #wrapper-form #title-wrapper{
+
+    margin: 10px;
+    text-align: center;
+
+}
+
+#App #content #create-blog #wrapper-form #title-wrapper .label{
+
+    position: relative;
+    left: -23%;
+    padding: 5px;
+    font-weight: bold;
+    font-family: georgia; 
+
+}
+
+#App #content #create-blog #wrapper-form #title-wrapper #title-entry{
+
+    margin: 10px;
+    width: 28em;
+    padding: 5px;
+
+}
+
+#App #content #create-blog #wrapper-form #author-wrapper{
+
+    margin: 10px;
+    text-align: center;
+
+}
+
+#App #content #create-blog #wrapper-form #author-wrapper .label{
+
+    position: relative;
+    left: -15%;
+    padding: 5px;
+    font-weight: bold;
+    font-family: georgia;
+
+}
+
+#App #content #create-blog #wrapper-form #author-wrapper #author-entry{
+
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#App #content #create-blog #wrapper-form #body-wrapper{
+
+    margin: 10px;
+    text-align: center;
+
+}
+
+#App #content #create-blog #wrapper-form #body-wrapper .label{
+
+    position: relative;
+    left: -23%;
+    padding: 5px;
+    font-weight: bold;
+    font-family: georgia;
+
+}
+
+#App #content #create-blog #wrapper-form #body-wrapper #body-entry{
+
+    margin: 10px;
+    padding: 5px;
+
+}
+
+#App #content #create-blog #wrapper-form .button{
+
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    background: rgb(156, 151, 151);
+    color: black;
+    font-weight: bold;
+    position: relative;
+    left: 45%;
+
+}
+
+#App #content #create-blog #wrapper-form .button:hover{
+
+    background: red;
+    color: white;
+
+}
+
+/* Create.js Ends Here */
+
+/* Update.js Starts Here */
+
+#App #content #update-wrapper{
+
+    margin: 10px auto;
+    width: 700px;
+    border: 1px solid grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+
+}
+
+#App #content #update-wrapper h2{
+
+    padding: 15px;
+    color: red;
+    background: #eee;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+#App #content #update-wrapper #update-blog{
+
+    margin: 10px;
+
+}
+
+#App #content #update-wrapper #update-blog #update-title{
+
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    border-bottom: 1px solid grey;
+
+}
+
+#App #content #update-wrapper #update-blog #update-title p{
+
+    margin: 5px;
+
+}
+
+#App #content #update-wrapper #update-blog #update-title label{
+
+    position: relative;
+    left: -24%;
+    font-weight: bold;
+
+}
+
+#App #content #update-wrapper #update-blog #update-title #new-title{
+
+    margin: 5px;
+    padding: 2px;
+    width: 28.5em;
+
+}
+
+#App #content #update-wrapper #update-blog #update-author{
+
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    border-bottom: 1px solid grey;
+
+}
+
+#App #content #update-wrapper #update-blog #update-author p{
+
+    margin: 5px;
+
+}
+
+#App #content #update-wrapper #update-blog #update-author label{
+
+    position: relative;
+    left: -22.5%;
+    font-weight: bold;
+
+}
+
+#App #content #update-wrapper #update-blog #update-author #new-author{
+
+    margin: 5px;
+    padding: 2px;
+    width: 28.5em;
+
+}
+
+#App #content #update-wrapper #update-blog #update-body{
+
+    margin: 10px;
+    padding: 5px;
+
+}
+
+#App #content #update-wrapper #update-blog #update-body label{
+
+    position: relative;
+    left: -23.5%;
+    font-weight: bold;
+
+}
+
+#App #content #update-wrapper #update-blog #update-body #new-body{
+
+    margin: 5px;
+    padding: 2px;
+
+}
+
+/* Update.js Ends Here */
+
+/* CreateUser.js Starts Here */
+
+#App #content #sign-up-wrapper{
+
+    margin: 10px auto;
+    width: 700px;
+    border: 1px solid grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+
+}
+
+#App #content #sign-up-wrapper h2{
+
+    padding: 10px;
+    background: #eee;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: red;
+
+}
+
+#App #content #sign-up-wrapper #user-cred .input{
+
+    padding: 2px;
+
+}
+
+/* CreateUser.js Ends Here */
