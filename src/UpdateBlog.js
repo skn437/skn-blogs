@@ -14,9 +14,9 @@ const UpdateBlog = ({blog}) => {
 
     const docRef = doc(db, "blogs", id);
 
-    const handleSubmit = event => {
+    const handleSubmit = e => {
 
-        event.preventDefault();
+        e.preventDefault();
 
         updateDoc(docRef, {
 

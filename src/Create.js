@@ -13,9 +13,9 @@ const Create = () => {
 
     const colRef = collection(db, "blogs");
 
-    const handleSubmits = event => {
+    const handleSubmits = e => {
 
-        event.preventDefault();
+        e.preventDefault();
 
         setIsLoading(true);
 
