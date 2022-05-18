@@ -39,11 +39,7 @@ const useFetchSingle = id => {
 
     onSnapshot(docRef, doc => {
 
-        let blogProto = {};
-
-        const data = doc.data();
-
-        Object.assign(blogProto, data);
+        let blogProto = {...doc.data(), id: doc.id};
 
         setBlog(blogProto);
         setIsLoading(false);
