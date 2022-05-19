@@ -29,36 +29,32 @@ const useFetch = () => {
         });
 
     }, []);
-
-    console.log(`Fetched Data: `, blogs);
-        
+ 
     return {blogs, isLoading};
 
 };
 
 const useFetchSingle = id => {
 
-    const [blog, setBlog] = useState([]);
+    const [blog, setBlog] = useState({});
     const [isLoading, setIsLoading] = useState(true);
 
     const docRef = doc(db, "blogs", id);
 
     useEffect(() => {
 
-        onSnapshot(docRef, doc => {
+        onSnapshot(docRef, snapshot => {
 
-            let blogProto = [];
-    
-            blogProto.push({...doc.data(), id: doc.id});
-    
+            let blogProto = {};
+
+            Object.assign(blogProto, snapshot.data());
+
             setBlog(blogProto);
             setIsLoading(false);
     
         });
 
     }, []);
-
-    console.log(`Fetched Data: `, blog);
 
     return {blog, isLoading};
 
